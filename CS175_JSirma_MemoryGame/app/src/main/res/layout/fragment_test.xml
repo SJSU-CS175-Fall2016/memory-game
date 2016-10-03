@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit"
+        android:text="X"
+        android:onClick="exit"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#000000">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/text3"
+                android:text="RULES FOR THE NBA MATCHING GAME "
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#1e98f3" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:text="1. The user is shown 20 tiles. Hidden below these tiles are 10 random images (use your own) each repeated twice."
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_weight="0.02"
+                android:textColor="#1c8d82"
+                android:textAlignment="gravity" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text="2. The user can touch on any two tiles. Touching on a tile will show the image."
+
+
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_weight="1.36"
+                android:textColor="#1c8d82" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:text="3. If the two tiles have matching images, they disappear (Use a check or something to indicate it&apos;s already matched). The user gets a point."
+
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_weight="1.36"
+                android:textColor="#1c8d82" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:text="4. If the two tiles do NOT have matching images, they flip over to being tiles again (flip animation not required)."
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_weight="1.36"
+                android:textColor="#1c8d82" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:text="5. Hitting the back soft key while playing will take the user back to the first screen (happens automatically). Trying to play should restore the playing activity to the previous state (may need some state handling). That is, if I hit back after matching say 10 tiles, and return to playing, it should show me the remaining 10 cards to match.   The points on the bottom of the screen is updated after every round.   "
+
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_weight="1.36"
+                android:textColor="#1c8d82" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

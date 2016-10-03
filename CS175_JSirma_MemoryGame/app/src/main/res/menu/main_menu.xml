@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".FragmentTest">
+<item android:id="@+id/new_game"
+    android:title="New Game"/>
+<group>
+    <item android:id="@+id/action_menu"
+        android:title="Menu"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_shuffle"
+        android:title="Shuffle">
+        <menu>
+            <item
+                android:title="Text" />
+            <item
+                android:title="Image" />
+        </menu>
+    </item>
+</group>
+</menu>
